@@ -75,17 +75,31 @@ section {
     margin-right: 100px;
 }
 
-table {
+.tabulka-jazyku,
+.tabulka-skoly {
     border-spacing: 0; /* aby nebyla mezera mezi podtrženými buňkami */
 }
 
-th, td {
+.tabulka-jazyku th,
+.tabulka-jazyku td, 
+.tabulka-skoly th,
+.tabulka-skoly td
+{
     text-align: left;
     border-bottom: 1px solid rgb(21, 73, 185);
     padding: 10px 0
 }
 
-.uroven {
+.tabulka-jazyku .uroven,
+.tabulka-skoly .skola {
     text-align: right;
-    padding-left: 50px;
+    padding-left: 80px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.kurziva {
+    font-style: italic;
 }
