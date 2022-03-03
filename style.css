@@ -9,8 +9,12 @@ body {
 
 h1,
 h2,
-a {
-    color: rgb(21, 73, 185);
+a:link {
+    color: rgb(21, 73, 185); /* rozlišení odkazů, na které uživatel ne/klikl */
+}
+
+a:visited {
+    color: rgb(113, 11, 207)
 }
 
 h1,
@@ -88,4 +92,37 @@ th, td {
 .uroven {
     text-align: right;
     padding-left: 50px;
+}
+
+.blabol {
+    font-size: 26px;
+    color: red;
+    display: none; /* element je NEVIDITELNÝ */
+}
+
+/* chci aby menu vypadalo jako tlačítka, aby jako odkaz fungovalo celé tlačítko */
+
+.menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(21, 73, 185);
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    padding: 20px 30px;
+    display: inline-block;
+}
+
+.menu a:hover,      /*najetí myší */
+.menu a:focus,      /*při skákání tabulátorem */
+.menu a:active {    /*označení myší, ještě než se klikne */
+    background-color: rgb(80, 122, 214);
 }
